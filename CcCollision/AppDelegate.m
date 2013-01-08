@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  CcCollision
+//  CcAccelerometer
 //
-//  Created by Ian Fan on 30/12/12.
+//  Created by Ian Fan on 27/12/12.
 //  Copyright __MyCompanyName__ 2012. All rights reserved.
 //
 
@@ -77,7 +77,7 @@
 
 	
 	// Create a Navigation Controller with the Director
-	navController_ = [[UINavigationController alloc] initWithRootViewController:director_];
+	navController_ = [[NavigationController alloc] initWithRootViewController:director_];
 	navController_.navigationBarHidden = YES;
 	
 	// set the Navigation Controller as the root view controller
@@ -89,13 +89,6 @@
 	
 	return YES;
 }
-
-// Supported orientations: Landscape. Customize it for your own needs
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-	return UIInterfaceOrientationIsLandscape(interfaceOrientation);
-}
-
 
 // getting a call, pause the game
 -(void) applicationWillResignActive:(UIApplication *)application
